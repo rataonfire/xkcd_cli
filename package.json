@@ -1,0 +1,26 @@
+{
+  "name": "xkcd_cli",
+  "version": "1.0.0",
+  "description": "simple xkcd password generator",
+  "homepage": "https://github.com/rataonfire/xkcd_cli#readme",
+  "bugs": {
+    "url": "https://github.com/rataonfire/xkcd_cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rataonfire/xkcd_cli.git"
+  },
+  "license": "MIT",
+  "author": "rat101",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "random-words": "^2.0.1",
+    "typescript": "^5.8.3"
+  }
+}
