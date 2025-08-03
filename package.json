@@ -23,7 +23,8 @@
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
     "build": "tsc",
-    "postbuild": "chmod +x dist/index.js"
+    "postbuild": "chmod +x dist/index.js",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "commander": "^14.0.0",
