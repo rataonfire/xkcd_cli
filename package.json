@@ -22,9 +22,8 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
-    "build": "tsc",
-    "postbuild": "chmod +x dist/index.js",
-    "prepare": "npm run build"
+    "build": "npx tsc",
+    "postbuild": "chmod +x dist/index.js"
   },
   "dependencies": {
     "commander": "^14.0.0",
