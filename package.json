@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "simple xkcd password generator",
   "homepage": "https://github.com/rataonfire/xkcd_cli#readme",
-  "main": "src/index.js",
-  "bin":{
-  "xkcd": "src/index.ts"
-},
+  "bin": {
+    "xkcd": "./dist/index.js"
+  },
   "bugs": {
     "url": "https://github.com/rataonfire/xkcd_cli/issues"
   },
@@ -16,15 +15,15 @@
   },
   "license": "MIT",
   "author": "rat101",
-  "type": "module",
-  "main": "src/index.ts",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/index.ts",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
-    "build": "tsc"
+    "build": "tsc",
+    "postbuild": "chmod +x dist/index.js"
   },
   "dependencies": {
     "commander": "^14.0.0",
@@ -40,5 +39,13 @@
     "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
