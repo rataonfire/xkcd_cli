@@ -1,0 +1,9 @@
+src/
+*.ts
+tsconfig.json
+.prettierrc
+.prettierignore
+eslint.config.cjs
+*.sh
+.git/
+.gitignore
