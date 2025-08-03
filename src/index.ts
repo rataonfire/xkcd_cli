@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { program } from "commander";
-import { generatePassword } from "./passwordGen.ts";
+import { generatePassword } from "./passwordGen.js";
 
 program
   .name('xkcd')
