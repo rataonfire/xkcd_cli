@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "simple xkcd password generator",
   "homepage": "https://github.com/rataonfire/xkcd_cli#readme",
+  "main": "src/index.js",
+  "bin":{
+  "xkcd": "src/index.ts"
+},
   "bugs": {
     "url": "https://github.com/rataonfire/xkcd_cli/issues"
   },
@@ -19,7 +23,8 @@
     "start": "ts-node src/index.ts",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "build": "tsc"
   },
   "dependencies": {
     "commander": "^14.0.0",
